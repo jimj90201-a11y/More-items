@@ -1,1 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
 
+[[mods]]
+modId="moreitems"
+version="1.0 Alpha"
+displayName="More items"
+authors="Gamerofpro"
+description='''
+A Minecraft mod which add more items, which are useful
+'''
+logoFile="logo.png"
+
+[[dependencies.therage]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.therage]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
