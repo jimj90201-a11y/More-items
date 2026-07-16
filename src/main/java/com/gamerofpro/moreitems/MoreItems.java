@@ -1,6 +1,7 @@
 package com.gamerofpro.moreitems;
 
 import com.gamerofpro.moreitems.registry.ModItems;
+import com.gamerofpro.moreitems.registry.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -14,8 +15,9 @@ public class MoreItems {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public MoreItems() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus(); 
+        
         ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
     }
 }
